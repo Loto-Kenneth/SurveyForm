@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this survey form.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" placeholder="Enter your age" min="18" max="99" required>
+    
+    <label for="dropdown">Gender:</label>
+    <select id="dropdown" required>
+      <option value="usa">Male</option>
+      <option value="canada">Female</option>
+      <option value="uk">Gay</option>
+      <option value="uk">Lesbian</option>
+      <option value="uk">Bisexual</option>
+      <option value="uk">Transgender</option>
+      <option value="uk">Queer</option>
+      <option value="uk">Intersex</option>
+      <option value="uk">Assexual</option>
+    </select>
+    
+    <label>Are you working?</label>
+    <label for="radio-yes">
+      <input type="radio" id="radio-yes" name="preference" value="yes"> Yes
+    </label>
+    <label for="radio-no">
+      <input type="radio" id="radio-no" name="preference" value="no"> No
+    </label>
+    
+    <label>Select your hobbies:</label>
+    <label for="checkbox-sports">
+      <input type="checkbox" id="checkbox-sports" value="sports"> Sports
+    </label>
+    <label for="checkbox-music">
+      <input type="checkbox" id="checkbox-music" value="music"> Music
+    </label>
+     <label for="checkbox-dancing">
+      <input type="checkbox" id="checkbox-dancing" value="dancing"> Dancing
+     </label>
+      <label for="checkbox-esports">
+      <input type="checkbox" id="checkbox-esports" value="esports"> eSports
+    </label>
+      <label for="checkbox-art">
+      <input type="checkbox" id="checkbox-art" value="art"> Art
+    </label>
+    <label for="checkbox-others">
+      <input type="checkbox" id="checkbox-others" value="others"> Others
+      <textarea id="comments" rows="4" placeholder="Please specify:"></textarea>
+    </label>
+    <label for="comments">Suggestions:</label>
+    <textarea id="comments" rows="4" placeholder="Enter your comments"></textarea>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
